@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 public class Timer : MonoBehaviour
 {
     public float timeRemaining = 10;
@@ -26,6 +28,8 @@ public class Timer : MonoBehaviour
                 Debug.Log("Time has run out!");
                 timeRemaining = 0;
                 timerIsRunning = false;
+                SceneManager.LoadScene("CookingBlueScore");
+
             }
         }
     }

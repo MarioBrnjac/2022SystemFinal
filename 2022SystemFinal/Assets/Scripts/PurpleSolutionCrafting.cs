@@ -28,8 +28,8 @@ public class PurpleSolutionCrafting : MonoBehaviour, IDropHandler
             if (eventData.pointerDrag.GetComponent<DragAndDrop>().id ==  id3)
             {
                 eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = this.GetComponent<RectTransform>().anchoredPosition;
-                GameObject newPseudo = Instantiate(PurpleSolution, PurpleSpawn.position, transform.rotation) as GameObject;
-                newPseudo.transform.SetParent(GameObject.FindGameObjectWithTag("Canvas").transform, false);
+                GameObject purpleSolution = Instantiate(PurpleSolution, PurpleSpawn.position, transform.rotation) as GameObject;
+                purpleSolution.transform.SetParent(GameObject.FindGameObjectWithTag("Canvas").transform, false);
                 Destroy(GameObject.FindGameObjectWithTag("I2"));
                 Destroy(GameObject.FindGameObjectWithTag("RedPhosphorus"));
                 GameObject[] pseudo = GameObject.FindGameObjectsWithTag("Pseudo");

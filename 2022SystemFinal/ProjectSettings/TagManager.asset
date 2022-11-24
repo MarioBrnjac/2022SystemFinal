@@ -9,6 +9,8 @@ TagManager:
   - PseudoBase
   - I2
   - RedPhosphorus
+  - PurpleSolution
+  - P2P
   layers:
   - Default
   - TransparentFX

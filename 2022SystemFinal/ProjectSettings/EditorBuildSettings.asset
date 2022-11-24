@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/CookingBlueGameplay.unity
+    guid: bb5fd073c854b40cd8eadfde8ff38c85
+  - enabled: 1
+    path: Assets/Scenes/CookingBlueScore.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects: {}
